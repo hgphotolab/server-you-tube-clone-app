@@ -15,9 +15,9 @@ const router = express.Router();
 //UNSUBSCRIBE USER
  router.put("/unsub/:id",verifyToken, unsubscribe);
 //LIKE
- router.put("/like/:id",verifyToken, like);
+ router.put("/like/:videoId",verifyToken, like);
 //DISLIKE
- router.put("/dislike/:id",verifyToken, dislike);
+ router.put("/dislike/:videoId",verifyToken, dislike);
 
  
 export default router;
